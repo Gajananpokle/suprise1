@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔒 PASSWORD SCREEN -->
+<div id="lockScreen" class="lock-screen">
+    
+    <p>Enter the secret password:bd</p>
+    <input type="password" id="passwordInput" placeholder="Enter password">
+    <button onclick="checkPassword()">Unlock ❤️</button>
+    <p id="errorMsg" class="error"></p>
+</div>
+
+<!-- 💖 MAIN CONTENT (Hidden First) -->
+<div id="mainContent" style="display:none;">
+
+    <!-- Background Hearts -->
+    <div class="hearts-container"></div>
+
+    <!-- Music -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicBtn">🎵</button>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Happy Valentine’s Day</h1>
+        <h2>Shriyuuu ❤️</h2>
+        <p>Makduu i lub uh 💕</p>
+        <button onclick="scrollToLetter()">Read My Heart 💌</button>
+    </section>
+
+    <!-- LETTER -->
+    <section id="letter" class="section">
+        <h2>huhu majya pishyaa💖</h2>
+        <p>
+            Makduu i lub uh with dil sheaa ♥️♥️🫂.!!
+            shriya kup kup moggg♥️🫂....!
+            pagal tujya wangda kitlo time spend karta titlo kami padta🫂🫂 aur !!!!! 
+            ik tujya wangda hv happy n matso naughty bin jata🤪..!!...but tu majye headache bin.😵🫨..!!
+            chlo hope so tu maje heart safe dhortale.... maka kup mog ditlee... n darling love uh🫶!!!
+            chd kai ulenaa tu haramiii ...raag kup hadta maka 😒😒😒....
+        </p>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section">
+        <h2>Our Memories 📸</h2>
+        <div class="gallery">
+            <img src="images/photo1.jpeg">
+            <img src="images/photo2.jpeg">
+            <img src="images/photo3.jpeg">
+        </div>
+    </section>
+
+    <!-- SURPRISE -->
+    <section class="section">
+        <h2>Secret For You 💌</h2>
+        <button onclick="showSurprise()">Open</button>
+        <p id="hiddenMessage" class="hidden"></p>
+    </section>
+
+    <!-- FOREVER -->
+    <section class="section">
+        <h2>One More Thing 💍</h2>
+        <button onclick="showForever()">Click Here</button>
+
+        <div id="foreverBox" class="hidden">
+            <h3>Shriyuuu, will you stay with me forever nii? ❤️</h3>
+            <button onclick="sayYes()">Yes.i💖u</button>
+            <button id="noBtn">No 🙈</button>
+        </div>
+
+        <p id="yesMessage" class="hidden"></p>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
